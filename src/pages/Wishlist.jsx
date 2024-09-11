@@ -8,10 +8,10 @@ import '../styles/Wishlist.css'
 const Wishlist = ({ wishlist }) => {
   return (
     <Container>
-      <h1 className="mt-5">My Wishlist</h1>
+      <h1 className="mt-5 heading">My Wishlist</h1>
       <Row>
         {wishlist.length === 0 ? (
-          <Col><p>No items in wishlist.</p></Col>
+          <Col><p className='Empty'>No items in wishlist.</p></Col>
         ) : (
           wishlist.map(item => (
             <Col md={4} key={item.id} className="mb-4">

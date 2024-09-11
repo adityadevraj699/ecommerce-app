@@ -47,7 +47,7 @@ const Payment = () => {
 
       {/* Add payment gateway integration or instructions here */}
       <Button variant="primary" onClick={() => {
-        alert(`Payment completed successfully using ${paymentMethod}.`);
+        alert(`Payment completed successfully using ${paymentMethod}.Thank you for your order! It being processed and will ship soon. Enjoy your purchase!`);
         navigate('/products');
       }}>Complete Payment</Button>
     </Container>

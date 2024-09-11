@@ -20,7 +20,6 @@ const ProductCard = memo(({ id }) => (
   <Col key={id} md={4} sm={6} xs={12}>
     <div className="product-card">
       <img src={`/public/images/product${id}.jpg`} alt={`Product ${id}`} className="img-fluid" />
-      <h5>Product {id}</h5>
       <p>${29.99 + id * 10}</p>
       <Button variant="primary" as={Link} to={`/product/${id}`}>View Details</Button>
     </div>

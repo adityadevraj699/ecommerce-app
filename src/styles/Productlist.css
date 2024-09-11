@@ -1,23 +1,23 @@
-/* Global styles for the product list */
+
 .product-card {
   border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s, box-shadow 0.2s;
-  background-color: #ffffff; /* Amazon white background */
-  margin-bottom: 20px; /* Space below each product card */
+  background-color: #ffffff; 
+  margin-bottom: 20px;
 }
 
 .product-card:hover {
-  transform: translateY(-5px); /* Slight lift on hover */
+  transform: translateY(-5px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 .product-image {
   width: 100%;
-  height: 200px; /* Fixed height for product images */
-  object-fit: cover; /* Ensure images cover the space without distortion */
+  height: 200px; 
+  object-fit: cover; 
 }
 
 .product-info {
@@ -27,22 +27,22 @@
 
 .product-title {
   font-size: 1.1rem;
-  font-weight: 600; /* Semi-bold title */
+  font-weight: 600; 
   margin-bottom: 8px;
-  color: #333; /* Dark color for product title */
+  color: #333; 
 }
 
 .product-price {
   font-size: 1.2rem;
-  color: #f0c14b; /* Amazon yellow color for the price */
+  color: #f0c14b; 
   margin-bottom: 16px;
 }
 
 .view-details-btn {
   width: 100%;
-  background-color: #f0c14b; /* Amazon yellow for button background */
-  border: 1px solid #a88734; /* Slightly darker border */
-  color: #111; /* Dark text color */
+  background-color: #333332; 
+  border: 1px solid #272625; 
+  color: #111; 
   font-size: 1rem;
   padding: 10px;
   border-radius: 4px;
@@ -50,8 +50,8 @@
 }
 
 .view-details-btn:hover {
-  background-color: #e2a33f; /* Darker yellow on hover */
-  color: #fff; /* White text on hover */
+  background-color: #141414; 
+  color: #fff; 
 }
 
 .text-center {
@@ -60,10 +60,26 @@
 
 h1 {
   font-size: 2.5rem;
-  color: #131921; /* Amazon dark blue color */
+  color: #131921;
 }
 
 .lead {
   font-size: 1.2rem;
-  color: #555; /* Slightly gray color for the lead text */
+  color: #090909;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+}
+.heading{
+  color: #f02020;
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.filter button{
+  color: rgb(5, 153, 252);
+  border: 1px solid black;
+  margin-right: .5rem;
+  margin-bottom: .5rem;
 }

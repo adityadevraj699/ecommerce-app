@@ -54,13 +54,14 @@ const Navbar = () => {
             </li>
           </ul>
 
-          {/* Search Icon */}
-          <div className="d-flex search-icon" onClick={handleSearchClick}>
-            <FaSearch />
-          </div>
+          
 
           {/* Icons */}
           <div className={`navbar-icons ${isNavOpen ? 'show' : ''}`}>
+            {/* Search Icon */}
+          <div className="d-flex search-icon" onClick={handleSearchClick}>
+            <FaSearch />
+          </div>
             <NavLink to="/cart" className="nav-icon" onClick={handleNavLinkClick}><FaShoppingCart /></NavLink>
             <NavLink to="/profile" className="nav-icon" onClick={handleNavLinkClick}><FaUser /></NavLink>
             <NavLink to="/wishlist" className="nav-icon" onClick={handleNavLinkClick}><FaHeart /></NavLink>

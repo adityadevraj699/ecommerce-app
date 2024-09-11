@@ -244,3 +244,9 @@ body {
     height: 280px;
   }
 }
+.text-center{
+  color: #010101;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

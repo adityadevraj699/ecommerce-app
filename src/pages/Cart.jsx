@@ -1,10 +1,11 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { redirect, useNavigate } from 'react-router-dom';
 import { Container, Row, Col, Button, Form } from 'react-bootstrap';
 import { FaTrash } from 'react-icons/fa';
 import '../styles/Cart.css';
+import { BiColor } from 'react-icons/bi';
 
 const Cart = ({ cart, setCart }) => {
   const navigate = useNavigate();
@@ -35,9 +36,9 @@ const Cart = ({ cart, setCart }) => {
 
   return (
     <Container>
-      <h1 className="mt-5">Your Cart</h1>
+      <h1 className="mt-5 heading">Your Cart</h1>
       {cart.length === 0 ? (
-        <p>Your cart is empty. <Button variant="primary" onClick={() => navigate('/products')}>Browse Products</Button></p>
+        <p className='Empty' >Oooop...!<br></br>Your cart is empty   <br></br> <Button variant="primary" onClick={() => navigate('/products')}>Browse Products</Button></p>
       ) : (
         <div>
           <Row>
@@ -64,7 +65,7 @@ const Cart = ({ cart, setCart }) => {
             ))}
           </Row>
           <div className="mt-4">
-            <h4>Total Price: {totalPrice.toFixed(2)}</h4>
+            <h4 className='total-price'>Total Price: {totalPrice.toFixed(2)}</h4>
           </div>
         </div>
       )}

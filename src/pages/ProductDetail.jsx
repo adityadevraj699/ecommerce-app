@@ -8,21 +8,21 @@ import '../styles/ProductDetail.css'; // Import custom CSS for styling
 
 // Sample product data
 const products = [
-  { id: 1, name: 'Product 1', price: 29.99, description: 'Detailed description for Product 1.', image: '/public/images/product1.avif' },
-  { id: 2, name: 'Product 2', price: 39.99, description: 'Detailed description for Product 2.', image: '/public/images/product2.avif' },
-  { id: 3, name: 'Product 3', price: 49.99, description: 'Detailed description for Product 3.', image: '/public/images/product3.avif' },
-  { id: 4, name: 'Product 4', price: 59.99, description: 'Detailed description for Product 4.', image: '/public/images/product4.avif' },
-  { id: 5, name: 'Product 5', price: 29.99, description: 'Detailed description for Product 5.', image: '/public/images/product5.avif' },
-  { id: 6, name: 'Product 6', price: 39.99, description: 'Detailed description for Product 6.', image: '/public/images/product6.avif' },
-  { id: 7, name: 'Product 7', price: 49.99, description: 'Detailed description for Product 7.', image: '/public/images/product7.avif' },
-  { id: 8, name: 'Product 8', price: 59.99, description: 'Detailed description for Product 8.', image: '/public/images/product8.avif' },
-  { id: 9, name: 'Product 9', price: 29.99, description: 'Detailed description for Product 9.', image: '/public/images/product9.avif' },
-  { id: 10, name: 'Product 10', price: 39.99, description: 'Detailed description for Product 10.', image: '/public/images/product10.avif' },
-  { id: 11, name: 'Product 11', price: 49.99, description: 'Detailed description for Product 11.', image: '/public/images/product11.avif' },
-  { id: 12, name: 'Product 12', price: 59.99, description: 'Detailed description for Product 12.', image: '/public/images/product12.avif' },
-  { id: 13, name: 'Product 13', price: 39.99, description: 'Detailed description for Product 13.', image: '/public/images/product13.jpg' },
-  { id: 14, name: 'Product 14', price: 49.99, description: 'Detailed description for Product 14.', image: '/public/images/product14.jpg' },
-  { id: 15, name: 'Product 15', price: 59.99, description: 'Detailed description for Product 15.', image: '/public/images/product15.jpg' },
+  { id: 1, name: 'Bulb', price: 29.99, description: 'Brighten up your space with our energy-efficient LED bulb. Long-lasting, eco-friendly, and perfect for any room. Save on electricity while enjoying superior lighting quality. Ideal for home or office!', image: '/public/images/product1.avif' },
+  { id: 2, name: 'Men Fashion', price: 149.99, description: 'Upgrade your wardrobe with our stylish mens fashion collection. From casual to formal, find the perfect outfit for every occasion. Premium quality, comfortable fit, and trend-setting designs. Shop now!', image: '/public/images/product2.avif' },
+  { id: 3, name: 'Kitchen', price: 239.99, description: 'Transform your kitchen with our premium kitchen set. Featuring durable, stylish cookware and utensils, its perfect for everyday cooking and special occasions. Elevate your culinary experience with quality and convenience!', image: '/public/images/product3.avif' },
+  { id: 4, name: 'Badminton', price: 99.99, description: 'Take your game to the next level with our high-performance badminton gear. Lightweight racquets, durable shuttlecocks, and comfortable grips for enhanced control and precision. Perfect for players of all levels!', image: '/public/images/product4.avif' },
+  { id: 5, name: 'Switch', price: 29.99, description: 'Upgrade your home or office with our reliable switch. Designed for durability and smooth operation, it ensures efficient control of your electrical devices. Sleek, modern design that fits any space.', image: '/public/images/product5.avif' },
+  { id: 6, name: 'Hand Beg', price: 79.99, description: 'Elevate your style with our chic and versatile handbag collection. Crafted with premium materials, featuring spacious compartments and trendy designs, perfect for both casual and formal occasions. Stylish meets functional!', image: '/public/images/product6.avif' },
+  { id: 7, name: 'Sofa', price: 189.99, description: 'Relax in style with our luxurious sofa. Designed for comfort and durability, it features plush cushions and a modern design, perfect for any living room. Elevate your home with cozy elegance!', image: '/public/images/product7.avif' },
+  { id: 8, name: 'BasketBall', price: 60.99, description: 'Enhance your game with our premium basketball. Designed for superior grip and durability, it ensures excellent control on the court. Perfect for indoor and outdoor play, built to withstand intense action!', image: '/public/images/product8.avif' },
+  { id: 9, name: 'Table Fan', price: 89.99, description: 'Stay cool with our powerful table fan. Compact, quiet, and energy-efficient, it offers adjustable speeds for personalized comfort. Perfect for home or office, providing a refreshing breeze in any space!', image: '/public/images/product9.avif' },
+  { id: 10, name: 'Women Fashion', price: 129.99, description: 'Discover the latest in womens fashion with our stylish collection. From elegant dresses to casual wear, each piece is designed for comfort and flair. Elevate your wardrobe with trendy, timeless looks!', image: '/public/images/product10.avif' },
+  { id: 11, name: 'Bed', price: 599.99, description: 'Experience ultimate comfort with our premium bed. Crafted with high-quality materials for durability and a restful nights sleep. Modern design meets luxurious support, perfect for transforming your bedroom into a haven.', image: '/public/images/product11.avif' },
+  { id: 12, name: 'Football', price: 59.99, description: 'Boost your game with our high-quality football. Engineered for optimal control and durability, its perfect for both training and matches. Enjoy a superior playing experience on any field with this top-notch ball!', image: '/public/images/product12.avif' },
+  { id: 13, name: 'Fashion', price: 159.99, description: 'Elevate your style with our latest fashion collection. Discover trendy, high-quality pieces that blend elegance and comfort. Perfect for any occasion, our designs help you stand out and feel confident. Shop now!', image: '/public/images/product13.jpg' },
+  { id: 14, name: 'Women Jacket', price: 169.99, description: 'Stay warm and stylish with our women’s jacket collection. Crafted from premium materials, our jackets offer both comfort and sophistication. Perfect for layering in any season, adding a chic touch to your wardrobe.', image: '/public/images/product14.jpg' },
+  { id: 15, name: 'Cloth', price: 179.99, description: 'Refresh your wardrobe with our versatile collection of cloth. From everyday essentials to elegant fabrics, our selection offers quality and style for every occasion. Find the perfect material for your next project or outfit!', image: '/public/images/product15.jpg' },
 ];
 
 const ProductDetail = ({ cart, setCart, wishlist, setWishlist }) => {

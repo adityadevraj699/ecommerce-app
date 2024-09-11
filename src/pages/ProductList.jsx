@@ -5,18 +5,18 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import '../styles/Productlist.css';
 
 const products = [
-  { id: 1, name: 'Product 1', price: 29.99, image: '/public/images/product1.avif', category: 'Electronics' },
-  { id: 2, name: 'Product 2', price: 39.99, image: '/public/images/product2.avif', category: 'Fashion' },
-  { id: 3, name: 'Product 3', price: 49.99, image: '/public/images/product3.avif', category: 'Home' },
-  { id: 4, name: 'Product 4', price: 59.99, image: '/public/images/product4.avif', category: 'Sports' },
-  { id: 5, name: 'Product 5', price: 69.99, image: '/public/images/product5.avif', category: 'Electronics' },
-  { id: 6, name: 'Product 6', price: 79.99, image: '/public/images/product6.avif', category: 'Fashion' },
-  { id: 7, name: 'Product 7', price: 89.99, image: '/public/images/product7.avif', category: 'Home' },
-  { id: 8, name: 'Product 8', price: 99.99, image: '/public/images/product8.avif', category: 'Sports' },
-  { id: 9, name: 'Product 9', price: 109.99, image: '/public/images/product9.avif', category: 'Electronics' },
-  { id: 10, name: 'Product 10', price: 119.99, image: '/public/images/product10.avif', category: 'Fashion' },
-  { id: 11, name: 'Product 11', price: 129.99, image: '/public/images/product11.avif', category: 'Home' },
-  { id: 12, name: 'Product 12', price: 139.99, image: '/public/images/product12.avif', category: 'Sports' },
+  { id: 1, name: 'Bulb', price: 29.99, image: '/public/images/product1.avif', category: 'Electronics' },
+  { id: 2, name: 'Men Fashion', price: 149.99, image: '/public/images/product2.avif', category: 'Fashion' },
+  { id: 3, name: 'Kitchen', price: 239.99, image: '/public/images/product3.avif', category: 'Home' },
+  { id: 4, name: 'Badminton', price: 99.99, image: '/public/images/product4.avif', category: 'Sports' },
+  { id: 5, name: 'Switch', price: 29.99, image: '/public/images/product5.avif', category: 'Electronics' },
+  { id: 6, name: 'Hand Beg', price: 79.99, image: '/public/images/product6.avif', category: 'Fashion' },
+  { id: 7, name: 'Sofa', price: 189.99, image: '/public/images/product7.avif', category: 'Home' },
+  { id: 8, name: 'Basket Ball', price: 60.99, image: '/public/images/product8.avif', category: 'Sports' },
+  { id: 9, name: 'Table Fan', price: 89.99, image: '/public/images/product9.avif', category: 'Electronics' },
+  { id: 10, name: 'Women Fashion', price: 129.99, image: '/public/images/product10.avif', category: 'Fashion' },
+  { id: 11, name: 'Bed', price: 599.99, image: '/public/images/product11.avif', category: 'Home' },
+  { id: 12, name: 'Football', price: 39.99, image: '/public/images/product12.avif', category: 'Sports' },
 ];
 
 const ProductList = () => {
@@ -38,12 +38,12 @@ const ProductList = () => {
   return (
     <Container>
       <div className="text-center">
-        <h1 className="mt-5 mb-4">Shop Our Products</h1>
+        <h1 className="mt-5 mb-4 heading">Our Products</h1>
         <p className="lead">Discover the best deals on top-rated products.</p>
       </div>
 
       {/* Filter options */}
-      <Row className="mb-4">
+      <Row className="mb-4 filter">
         <Col>
           <Button onClick={() => navigate('/products?category=All')} variant={filterCategory === 'All' ? 'dark' : 'light'}>
             All
@@ -59,6 +59,18 @@ const ProductList = () => {
           </Button>
           <Button onClick={() => navigate('/products?category=Sports')} variant={filterCategory === 'Sports' ? 'dark' : 'light'}>
             Sports
+          </Button>
+          <Button onClick={() => navigate('/products?category=Books')} variant={filterCategory === 'Books' ? 'dark' : 'light'}>
+            Books
+          </Button>
+          <Button onClick={() => navigate('/products?category=Toys')} variant={filterCategory === 'Toys' ? 'dark' : 'light'}>
+            Toys
+          </Button>
+          <Button onClick={() => navigate('/products?category=Beauty')} variant={filterCategory === 'Beauty' ? 'dark' : 'light'}>
+            Beauty
+          </Button>
+          <Button onClick={() => navigate('/products?category=Automotive')} variant={filterCategory === 'Automotive' ? 'dark' : 'light'}>
+            Automotive
           </Button>
         </Col>
       </Row>

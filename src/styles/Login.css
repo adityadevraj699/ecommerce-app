@@ -1,0 +1,84 @@
+/* Basic styling for the login/signup page */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 360px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.login-header h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #111;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  color: #007185;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f0c14b;
+  color: #111;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e1a91d;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 600px) {
+  .login-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .login-header h2 {
+    font-size: 20px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}

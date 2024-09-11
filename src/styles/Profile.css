@@ -1,0 +1,200 @@
+/* Profile Container */
+.profile-container {
+  max-width: 1200px; /* Increased max-width for larger screens */
+  margin: 55px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background: #f4f4f4;
+  position: relative; /* Changed from absolute to relative for better responsiveness */
+}
+
+/* Profile Header */
+.profile-header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Rest of the CSS remains unchanged */
+.profile-header .profile-pic-container {
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.profile-header .profile-pic-container:hover {
+  transform: scale(1.05);
+}
+
+.profile-header .profile-pic {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 20px;
+  transition: box-shadow 0.3s ease-in-out;
+  margin: .8rem;
+}
+
+.profile-header .profile-pic-container:hover .profile-pic {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.profile-header h2 {
+  margin: 0;
+  font-size: 30px;
+  color: #f90707;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Flexbox Layout for User and Order Details */
+.profile-content {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping of content on smaller screens */
+  gap: 20px; /* Adds space between columns */
+}
+
+/* User Details Section */
+.user-details {
+  flex: 1; /* Allows it to grow and fill available space */
+  min-width: 300px; /* Ensures a minimum width */
+  max-width: 100%; /* Prevents it from growing too wide */
+}
+
+/* Order Details Section */
+.order-details {
+  flex: 1; /* Allows it to grow and fill available space */
+  min-width: 300px; /* Ensures a minimum width */
+  max-width: 100%; /* Prevents it from growing too wide */
+}
+
+/* Profile Details */
+.profile-details {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.profile-edit-form input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.profile-edit-form input:focus {
+  border-color: #f0c14b;
+  outline: none;
+}
+
+.profile-edit-form button {
+  background-color: #f0c14b;
+  border: none;
+  color: #111;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.profile-edit-form button:hover {
+  background-color: #ddb347;
+  transform: translateY(-2px);
+}
+
+.profile-edit-form button:last-child {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  color: #333;
+}
+
+.profile-edit-form button:last-child:hover {
+  background-color: #e1e1e1;
+  transform: translateY(-2px);
+}
+
+/* Order History */
+.order-history {
+  margin-bottom: 20px;
+}
+
+.order-history h4 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  padding-bottom: 10px;
+  color: #bd9514;
+  font-weight: bolder;
+  
+}
+
+.order-history div {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.order-history p {
+  margin: 5px 0;
+}
+
+/* Profile Buttons */
+.profile-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
+.profile-buttons button {
+  background-color: #f0c14b;
+  border: none;
+  color: #111;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.profile-buttons button:hover {
+  background-color: #ddb347;
+  transform: translateY(-2px);
+}
+
+.profile-buttons button:last-child {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  color: #333;
+}
+
+.profile-buttons button:last-child:hover {
+  background-color: #e1e1e1;
+  transform: translateY(-2px);
+}
+
+.user-detail-fill{
+    color: #0a0a0a;
+    font-size: large;
+    font-weight: bold;
+    font-style: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

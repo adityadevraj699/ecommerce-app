@@ -1,30 +1,13 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
-import { FaShoppingCart, FaUser, FaBars, FaTimes, FaHeart } from 'react-icons/fa';
+import { FaShoppingCart, FaUser, FaBars, FaTimes, FaHeart, FaSearch } from 'react-icons/fa';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/Navbar.css';  // Custom styles for the Navbar
 
 const Navbar = () => {
-  const [searchQuery, setSearchQuery] = useState('');
   const [isNavOpen, setIsNavOpen] = useState(false); // State to handle the nav menu visibility
   const navigate = useNavigate();
-
-  const handleSearch = (event) => {
-    event.preventDefault();
-    if (searchQuery) {
-      navigate(`/search?query=${searchQuery}`);
-    }
-  };
-
-  const handleInputClick = () => {
-    if (!searchQuery) {
-      navigate('/search');
-    }
-    if (isNavOpen) {
-      setIsNavOpen(false); // Hide navbar on input click
-    }
-  };
 
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen); // Toggle the nav menu visibility
@@ -33,6 +16,13 @@ const Navbar = () => {
   const handleNavLinkClick = () => {
     if (isNavOpen) {
       setIsNavOpen(false); // Hide navbar on link click
+    }
+  };
+
+  const handleSearchClick = () => {
+    navigate('/search'); // Redirect to the search page
+    if (isNavOpen) {
+      setIsNavOpen(false); // Hide navbar on search click
     }
   };
 
@@ -64,18 +54,10 @@ const Navbar = () => {
             </li>
           </ul>
 
-          {/* Search Bar */}
-          <form className="d-flex search-bar" onSubmit={handleSearch}>
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Search categories or products..."
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              onClick={handleInputClick} // Handle input click
-            />
-            
-          </form>
+          {/* Search Icon */}
+          <div className="d-flex search-icon" onClick={handleSearchClick}>
+            <FaSearch />
+          </div>
 
           {/* Icons */}
           <div className={`navbar-icons ${isNavOpen ? 'show' : ''}`}>

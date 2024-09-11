@@ -44,7 +44,7 @@ const Home = () => {
     { name: 'Electronics', image: '/public/images/electronics.jpg' },
     { name: 'Fashion', image: '/public/images/fashion.jpg' },
     { name: 'Home', image: '/public/images/home.jpg' },
-    { name: 'Sports', image: '/public/images/sports.jpg' },
+    { name: 'Sports', image: '/public/images/sports.jpg' }
     // Add more categories if needed
   ];
 
@@ -99,7 +99,7 @@ const Home = () => {
           </Col>
           <Col md={6} sm={12}>
             <div className="offer-card">
-              <img src="/public/images/offer2.avif" alt="Offer 2" className="img-fluid" />
+              <img src="/images/offer2.avif" alt="Offer 2" className="img-fluid" />
               <h3 className="offer-title">Discount on Electronics</h3>
               <Button as={Link} to="/products" variant="light">Browse Deals</Button>
             </div>

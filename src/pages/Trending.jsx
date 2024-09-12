@@ -7,13 +7,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/Trending.css'; 
 
 const trendingProducts = [
-  { id: 1, name: 'Bulb', price: '29.99', imageUrl: '/public/images/product1.avif' },
-  { id: 2, name: 'Men Fashion', price: '149.99', imageUrl: '/public/images/product2.avif' },
-  { id: 3, name: 'Kitchen', price: '239.99', imageUrl: '/public/images/product3.avif' },
-  { id: 4, name: 'Badminton', price: '99.99', imageUrl: '/public/images/product4.avif' },
-  { id: 13, name: 'Fashion', price: '$159.00', imageUrl: '/public/images/product13.jpg' },
-  { id: 14, name: 'Women Jacket', price: '$169.00', imageUrl: '/public/images/product14.jpg' },
-  { id: 15, name: 'Cloth', price: '$179.00', imageUrl: '/public/images/product15.jpg' },
+  { id: 1, name: 'Bulb', price: '29.99', imageUrl: '/images/product1.avif' },
+  { id: 2, name: 'Men Fashion', price: '149.99', imageUrl: '/images/product2.avif' },
+  { id: 3, name: 'Kitchen', price: '239.99', imageUrl: '/images/product3.avif' },
+  { id: 4, name: 'Badminton', price: '99.99', imageUrl: '/images/product4.avif' },
+  { id: 13, name: 'Fashion', price: '$159.00', imageUrl: '/images/product13.jpg' },
+  { id: 14, name: 'Women Jacket', price: '$169.00', imageUrl: '/images/product14.jpg' },
+  { id: 15, name: 'Cloth', price: '$179.00', imageUrl: '/images/product15.jpg' },
   
 ];
 

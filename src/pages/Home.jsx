@@ -19,7 +19,7 @@ const CategoryCard = memo(({ category, navigate }) => (
 const ProductCard = memo(({ id }) => (
   <Col key={id} md={4} sm={6} xs={12}>
     <div className="product-card">
-      <img src={`/public/images/product${id}.jpg`} alt={`Product ${id}`} className="img-fluid" />
+      <img src={`/images/product${id}.jpg`} alt={`Product ${id}`} className="img-fluid" />
       <p>${29.99 + id * 10}</p>
       <Button variant="primary" as={Link} to={`/product/${id}`}>View Details</Button>
     </div>
@@ -40,10 +40,10 @@ const Home = () => {
   const isInWishlist = (productId) => wishlist.includes(productId);
 
   const categories = [
-    { name: 'Electronics', image: '/public/images/electronics.jpg' },
-    { name: 'Fashion', image: '/public/images/fashion.jpg' },
-    { name: 'Home', image: '/public/images/home.jpg' },
-    { name: 'Sports', image: '/public/images/sports.jpg' }
+    { name: 'Electronics', image: '/images/electronics.jpg' },
+    { name: 'Fashion', image: '/images/fashion.jpg' },
+    { name: 'Home', image: '/images/home.jpg' },
+    { name: 'Sports', image: '/images/sports.jpg' }
     
   ];
 
@@ -52,14 +52,14 @@ const Home = () => {
       {/* Carousel Section */}
       <Carousel>
         <Carousel.Item>
-          <img className="d-block w-100" src="/public/images/banner1.jpg" alt="First slide" />
+          <img className="d-block w-100" src="/images/banner1.jpg" alt="First slide" />
           <Carousel.Caption>
             <h3>Top Deals</h3>
             <Button as={Link} to="/products" variant="light">Shop Now</Button>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img className="d-block w-100" src="/public/images/banner2.jpg" alt="Second slide" />
+          <img className="d-block w-100" src="/images/banner2.jpg" alt="Second slide" />
           <Carousel.Caption>
             <h3>Latest Products</h3>
             <Button as={Link} to="/products" variant="light">Browse Products</Button>
@@ -91,7 +91,7 @@ const Home = () => {
         <Row>
           <Col md={6} sm={12}>
             <div className="offer-card">
-              <img src="/public/images/offer1.avif" alt="Offer 1" className="img-fluid" />
+              <img src="/images/offer1.avif" alt="Offer 1" className="img-fluid" />
               <h3 className="offer-title">Buy One Get One Free</h3>
               <Button as={Link} to="/products" variant="light">Shop Now</Button>
             </div>

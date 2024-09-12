@@ -7,13 +7,13 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="container">
-        <p>&copy; 2024 Fashion Hub. ADITYA KUMAR....</p>
-        <ul className="footer-links">
-          <li><a href="/about">About Us</a></li>
-          <li><a href="/contact">Contact</a></li>
-          <li><a href="/privacy">Privacy Policy</a></li>
-          <li><a href="/terms">Terms of Service</a></li>
-        </ul>
+        <div className="footer-content">
+          {/* Simplified Contact and About Section */}
+          <div className="footer-info">
+            <p>Email: support@fashionhub.com | Phone: +1 (800) 123-4567</p>
+            <p>&copy; 2024 Fashion Hub. All rights reserved.</p>
+          </div>
+        </div>
       </div>
     </footer>
   );

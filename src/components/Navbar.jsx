@@ -63,7 +63,7 @@ const Navbar = () => {
             <FaSearch />
           </div>
             <NavLink to="/cart" className="nav-icon" onClick={handleNavLinkClick}><FaShoppingCart /></NavLink>
-            <NavLink to="/profile" className="nav-icon" onClick={handleNavLinkClick}><FaUser /></NavLink>
+            <NavLink to="/login" className="nav-icon" onClick={handleNavLinkClick}><FaUser /></NavLink>
             <NavLink to="/wishlist" className="nav-icon" onClick={handleNavLinkClick}><FaHeart /></NavLink>
           </div>
         </div>

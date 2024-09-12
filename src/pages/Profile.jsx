@@ -7,7 +7,7 @@ import '../styles/Profile.css';
 
 const Profile = ({ user, setUser }) => {
   const navigate = useNavigate();
-  const fileInputRef = useRef(null); // Create a ref for the file input
+  const fileInputRef = useRef(null); 
   const [editing, setEditing] = useState(false);
   const [name, setName] = useState(user?.name || '');
   const [email, setEmail] = useState(user?.email || '');
@@ -32,7 +32,7 @@ const Profile = ({ user, setUser }) => {
       email,
       mobile,
       address,
-      profilePic, // Update profilePic with the new value
+      profilePic, 
     };
     setUser(updatedUser);
   };
@@ -46,7 +46,7 @@ const Profile = ({ user, setUser }) => {
     if (file) {
       const reader = new FileReader();
       reader.onloadend = () => {
-        setProfilePic(reader.result); // Set the profilePic state with the image data URL
+        setProfilePic(reader.result); 
       };
       reader.readAsDataURL(file);
     }
@@ -54,7 +54,7 @@ const Profile = ({ user, setUser }) => {
 
   const handleProfilePicClick = () => {
     if (fileInputRef.current) {
-      fileInputRef.current.click(); // Trigger the file input click
+      fileInputRef.current.click(); 
     }
   };
 
@@ -82,9 +82,9 @@ const Profile = ({ user, setUser }) => {
             <input
               type="file"
               accept="image/*"
-              ref={fileInputRef} // Attach ref to file input
+              ref={fileInputRef} 
               onChange={handleFileChange}
-              style={{ display: 'none' }} // Hide the file input
+              style={{ display: 'none' }} 
             />
             <input
               type="text"
@@ -118,15 +118,17 @@ const Profile = ({ user, setUser }) => {
             <p><strong className='user-detail-fill'>Email:</strong> {email}</p>
             <p><strong className='user-detail-fill'>Mobile:</strong> {mobile}</p>
             <p><strong className='user-detail-fill'>Address:</strong> {address}</p>
-            <div className="order-history">
-              <h4>Order History</h4>
-              {user.orders.map(order => (
-                <div key={order.id}>
-                  <p><strong className='user-detail-fill'>Item:</strong> {order.item}</p>
-                  <p><strong className='user-detail-fill'>Date:</strong> {order.date}</p>
-                </div>
-              ))}
-            </div>
+            {user.orders && user.orders.length > 0 && (
+              <div className="order-history">
+                <h4>Order History</h4>
+                {user.orders.map(order => (
+                  <div key={order.id}>
+                    <p><strong className='user-detail-fill'>Item:</strong> {order.item}</p>
+                    <p><strong className='user-detail-fill'>Date:</strong> {order.date}</p>
+                  </div>
+                ))}
+              </div>
+            )}
           </>
         )}
 

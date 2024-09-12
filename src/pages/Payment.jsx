@@ -23,7 +23,7 @@ const Payment = () => {
 
   return (
     <Container className="payment-container">
-      <h1 className="mt-5">Payment</h1>
+      <h1 className="mt-5 heading">Payment</h1>
       <p>You have selected {paymentMethod}. Please proceed with the payment.</p>
 
       <Card className="mb-4">

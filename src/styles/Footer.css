@@ -1,40 +1,30 @@
-/* src/styles/Footer.css */
 
-/* General footer styling */
 .footer {
-  background-color: #333;  /* Dark background color */
-  color: #fff;             /* White text for contrast */
-  padding: 10px 0;         /* Minimal padding to reduce height */
-  font-size: 14px;         /* Small font size for a compact layout */
+  background-color: #354e54; 
+  color: #fff;             
+  padding: 10px 0;       
+  font-size: 14px;        
 }
 
 .footer .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;  /* Center the content */
+  flex-direction: column;  
 }
 
 .footer-content {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;       /* Center-align text */
+  text-align: center;      
   width: 100%;
 }
 
 .footer-info {
-  margin: 0;               /* No extra margins */
-  line-height: 1.4;         /* Slightly tighter line spacing */
+  margin: 0;              
+  line-height: 1.4;        
 }
 
-/* Styling for links inside the footer */
-.footer a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;       /* Make links stand out */
-}
 
-.footer a:hover {
-  text-decoration: underline;  /* Underline on hover */
-}
+

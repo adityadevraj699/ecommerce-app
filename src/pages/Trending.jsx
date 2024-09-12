@@ -1,10 +1,10 @@
 /* eslint-disable no-unused-vars */
-// src/components/Trending.jsx
+
 
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link for navigation
+import { Link } from 'react-router-dom'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../styles/Trending.css'; // Import your custom styles
+import '../styles/Trending.css'; 
 
 const trendingProducts = [
   { id: 1, name: 'Bulb', price: '29.99', imageUrl: '/public/images/product1.avif' },
@@ -14,7 +14,7 @@ const trendingProducts = [
   { id: 13, name: 'Fashion', price: '$159.00', imageUrl: '/public/images/product13.jpg' },
   { id: 14, name: 'Women Jacket', price: '$169.00', imageUrl: '/public/images/product14.jpg' },
   { id: 15, name: 'Cloth', price: '$179.00', imageUrl: '/public/images/product15.jpg' },
-  // Add more products as needed
+  
 ];
 
 const Trending = () => {

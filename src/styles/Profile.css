@@ -1,16 +1,16 @@
-/* Profile Container */
+
 .profile-container {
-  max-width: 1200px; /* Increased max-width for larger screens */
+  max-width: 1200px;
   margin: 55px auto;
   padding: 20px;
   font-family: Arial, sans-serif;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   background: #f4f4f4;
-  position: relative; /* Changed from absolute to relative for better responsiveness */
+  position: relative; 
 }
 
-/* Profile Header */
+
 .profile-header {
   display: flex;
   align-items: center;
@@ -22,7 +22,7 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Rest of the CSS remains unchanged */
+
 .profile-header .profile-pic-container {
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
@@ -55,25 +55,25 @@
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-/* Flexbox Layout for User and Order Details */
+
 .profile-content {
   display: flex;
-  flex-wrap: wrap; /* Allows wrapping of content on smaller screens */
-  gap: 20px; /* Adds space between columns */
+  flex-wrap: wrap; 
+  gap: 20px; 
 }
 
-/* User Details Section */
+
 .user-details {
-  flex: 1; /* Allows it to grow and fill available space */
-  min-width: 300px; /* Ensures a minimum width */
-  max-width: 100%; /* Prevents it from growing too wide */
+  flex: 1;
+  min-width: 300px;
+  max-width: 100%; 
 }
 
-/* Order Details Section */
+
 .order-details {
-  flex: 1; /* Allows it to grow and fill available space */
-  min-width: 300px; /* Ensures a minimum width */
-  max-width: 100%; /* Prevents it from growing too wide */
+  flex: 1; 
+  min-width: 300px; 
+  max-width: 100%; 
 }
 
 /* Profile Details */

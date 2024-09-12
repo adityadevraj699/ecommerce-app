@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../styles/SearchBar.css'; // Custom styles for search results
+import '../styles/SearchBar.css'; 
 
 const SearchBar = () => {
   const location = useLocation();
@@ -11,7 +11,7 @@ const SearchBar = () => {
   const [filteredCategories, setFilteredCategories] = useState([]);
   const [showCategoryMessage, setShowCategoryMessage] = useState(false);
 
-  // Available categories
+ 
   const categories = [
     'All',
     'Electronics',
@@ -24,14 +24,14 @@ const SearchBar = () => {
     'Automotive',
   ];
 
-  // Extract the search query from the URL if available
+ 
   useEffect(() => {
     const queryParams = new URLSearchParams(location.search);
     const query = queryParams.get('query') || '';
     setSearchQuery(query);
   }, [location]);
 
-  // Filter categories based on the search query
+
   useEffect(() => {
     if (searchQuery) {
       const filtered = categories.filter((category) =>
@@ -40,16 +40,17 @@ const SearchBar = () => {
       setFilteredCategories(filtered);
       setShowCategoryMessage(filtered.length === 0);
     } else {
-      setFilteredCategories(categories); // Show all categories if no search query
-      setShowCategoryMessage(false); // Hide message if no search query
+      setFilteredCategories(categories);
+      setShowCategoryMessage(false);
     }
+ 
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchQuery]);
 
   const handleSearch = (event) => {
     event.preventDefault();
     if (searchQuery) {
-      // Navigate to category page with query parameter
+      
       navigate(`/products?category=${searchQuery}`);
     }
   };
@@ -74,7 +75,7 @@ const SearchBar = () => {
       <div className="categories-list mt-4">
         <h4>Available Categories:</h4>
         {showCategoryMessage && (
-          <p>No categories match your search.</p> // Show no categories match message if needed
+          <p>No categories match your search.</p> 
         )}
         <ul className="list-group">
           {filteredCategories.length > 0 ? (
@@ -88,7 +89,7 @@ const SearchBar = () => {
               </li>
             ))
           ) : (
-            <p>Loading categories...</p> // Loading message if categories are not yet loaded
+            <p>Loading categories...</p> 
           )}
         </ul>
       </div>

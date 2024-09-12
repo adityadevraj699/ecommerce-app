@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 // src/components/Footer.jsx
 import React from 'react';
-import '../styles/Footer.css';  // Custom styles for the Footer
+import '../styles/Footer.css'; 
 
 const Footer = () => {
   return (
@@ -10,8 +10,8 @@ const Footer = () => {
         <div className="footer-content">
           {/* Simplified Contact and About Section */}
           <div className="footer-info">
-            <p>Email: support@fashionhub.com | Phone: +1 (800) 123-4567</p>
-            <p>&copy; 2024 Fashion Hub. All rights reserved.</p>
+            <p>Email: fashionhub@gmail.com | Phone: 123-456-7890</p>
+            <p>&copy; 2024 Fashion Hub. ADITYA KUMAR</p>
           </div>
         </div>
       </div>

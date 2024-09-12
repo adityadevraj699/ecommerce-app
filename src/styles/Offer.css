@@ -1,8 +1,8 @@
-/* src/styles/Offers.css */
+
 
 .offers-section {
     padding: 80px 0;
-    background-color: #f4f4f4; /* Light gray background */
+    background-color: #f4f4f4; 
   }
   
   .offer-card {
@@ -15,8 +15,8 @@
   }
   
   .offer-card:hover {
-    transform: translateY(-10px); /* Elevate card on hover */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); 
   }
   
   .offer-img {

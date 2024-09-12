@@ -1,4 +1,4 @@
-/* Basic styling for the login/signup page */
+
 body {
   margin:0 ;
   font-family: Arial, sans-serif;
@@ -49,14 +49,14 @@ form {
 }
 
 input {
-  margin-bottom: 15px; /* Increased gap between input fields */
+  margin-bottom: 15px; 
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
 
 button {
-  margin-bottom: 15px; /* Gap between buttons and other elements */
+  margin-bottom: 15px; 
   padding: 10px;
   border: none;
   border-radius: 4px;

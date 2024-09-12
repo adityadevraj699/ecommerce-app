@@ -1,70 +1,70 @@
 .trending-section {
     padding: 80px 0;
-    background-color: #f4f4f4; /* Slightly darker gray background */
+    background-color: #f4f4f4;
   }
   
   .card {
-    border: none; /* Remove border */
-    border-radius: 12px; /* Rounded corners */
+    border: none; 
+    border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
   .card:hover {
-    transform: translateY(-10px); /* Elevate card on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
   }
   
   .card-img-top {
-    height: 200px; /* Increased height for a more impressive look */
-    object-fit: cover; /* Cover image proportionally */
-    border-bottom: 1px solid #e0e0e0; /* Border below image */
+    height: 200px; 
+    object-fit: cover; 
+    border-bottom: 1px solid #e0e0e0; 
   }
   
   .card-body {
     padding: 20px;
-    background-color: #ffffff; /* White background for card body */
-    text-align: center; /* Center-align text */
+    background-color: #ffffff; 
+    text-align: center; 
   }
   
   .card-title {
-    font-size: 1.25rem; /* Larger title font size */
-    font-weight: 700; /* Bold font weight */
-    color: #333; /* Darker text color */
-    margin-bottom: 0.5rem; /* Margin below title */
+    font-size: 1.25rem; 
+    font-weight: 700;
+    color: #333; 
+    margin-bottom: 0.5rem; 
   }
   
   .card-text {
-    font-size: 1rem; /* Standard font size */
-    color: #555; /* Slightly lighter text color */
-    margin-bottom: 1rem; /* Margin below price */
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
   }
   
   .btn-primary {
-    background-color: #ff9900; /* Amazon-like orange */
+    background-color: #ff9900; 
     border-color: #ff9900;
-    font-weight: 600; /* Bold text */
+    font-weight: 600; 
   }
   
   .btn-primary:hover {
-    background-color: #cc7a00; /* Darker orange on hover */
+    background-color: #cc7a00;
     border-color: #cc7a00;
   }
   
   @media (max-width: 992px) {
     .card-img-top {
-      height: 180px; /* Slightly smaller image height on tablets */
+      height: 180px;
     }
   }
   
   @media (max-width: 768px) {
     .card-img-top {
-      height: 150px; /* Smaller image height on mobile */
+      height: 150px;
     }
   
     .card-body {
-      padding: 15px; /* Reduce padding on mobile */
+      padding: 15px;
     }
   }
   

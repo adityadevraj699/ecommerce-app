@@ -1,7 +1,7 @@
-/* src/styles/global.css */
+
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-/* General styles */
+
 *{
   user-select: none;
 }
@@ -15,11 +15,11 @@ h1 {
   
 
 .main-content {
-  margin-top: 56px; /* Adjust this based on the height of the Navbar */
-  padding-bottom: 60px; /* Adjust this based on the height of the Footer */
+  margin-top: 56px; 
+  padding-bottom: 60px;
 }
 
-/* src/styles/global.css */
+
 html, body {
   margin: 0;
   padding: 0;
@@ -33,7 +33,7 @@ body {
 
 .main-content {
   flex: 1;
-  overflow: auto; /* Allows scrolling */
+  overflow: auto; 
 }
 
 .navbar {
@@ -51,18 +51,18 @@ body {
   left: 0;
   z-index: 1000;
 }
-/* Adjust spacing to accommodate the navbar and footer */
+
 .main-content {
-  margin-top: 60px; /* Adjust based on your navbar height */
-  margin-bottom: 60px; /* Adjust based on your footer height */
+  margin-top: 60px; 
+  margin-bottom: 60px; 
 }
-/* Hide scrollbar but allow scrolling */
+
 html, body {
-  overflow: -moz-scrollbars-none; /* For Firefox */
-  -ms-overflow-style: none;       /* For Internet Explorer and Edge */
-  scrollbar-width: none;          /* For Firefox */
+  overflow: -moz-scrollbars-none; 
+  -ms-overflow-style: none;      
+  scrollbar-width: none;         
 }
 
 body::-webkit-scrollbar {
-  display: none; /* For Chrome, Safari, and Opera */
+  display: none;
 }

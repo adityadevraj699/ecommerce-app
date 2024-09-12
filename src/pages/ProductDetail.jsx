@@ -4,9 +4,9 @@ import React, { useEffect, useState } from 'react';
 import { Container, Button, Row, Col } from 'react-bootstrap';
 import { useNavigate, useParams } from 'react-router-dom';
 import { FaHeart, FaRegHeart } from 'react-icons/fa';
-import '../styles/ProductDetail.css'; // Import custom CSS for styling
+import '../styles/ProductDetail.css'; 
 
-// Sample product data
+
 const products = [
   { id: 1, name: 'Bulb', price: 29.99, description: 'Brighten up your space with our energy-efficient LED bulb. Long-lasting, eco-friendly, and perfect for any room. Save on electricity while enjoying superior lighting quality. Ideal for home or office!', image: '/public/images/product1.avif' },
   { id: 2, name: 'Men Fashion', price: 149.99, description: 'Upgrade your wardrobe with our stylish mens fashion collection. From casual to formal, find the perfect outfit for every occasion. Premium quality, comfortable fit, and trend-setting designs. Shop now!', image: '/public/images/product2.avif' },
@@ -26,58 +26,58 @@ const products = [
 ];
 
 const ProductDetail = ({ cart, setCart, wishlist, setWishlist }) => {
-  const { id } = useParams();  // Get the product id from the URL
-  const navigate = useNavigate();  // React Router navigate hook
-  const [product, setProduct] = useState(null);  // State to hold the product data
+  const { id } = useParams();  
+  const navigate = useNavigate();  
+  const [product, setProduct] = useState(null);  
 
-  // Fetch the product based on the id from the params
+ 
   useEffect(() => {
     const fetchProduct = async () => {
       const productData = products.find(p => p.id === parseInt(id));
-      setProduct(productData);  // Set the fetched product
+      setProduct(productData);  
     };
 
-    fetchProduct();  // Call the fetch function
+    fetchProduct(); 
   }, [id]);
 
-  // Toggle wishlist functionality
+ 
   const toggleWishlist = (productId) => {
     setWishlist((prev) => {
       const isWishlisted = prev.some(item => item.id === productId);
       if (isWishlisted) {
-        return prev.filter(item => item.id !== productId);  // Remove from wishlist
+        return prev.filter(item => item.id !== productId); 
       } else {
-        // Add complete product details to wishlist
+       
         const productToAdd = products.find(p => p.id === productId);
         return [...prev, { ...productToAdd, date: new Date() }];
       }
     });
   };
 
-  // Check if product is in wishlist
+ 
   const isInWishlist = (productId) => wishlist.some(item => item.id === productId);
 
-  // Handle Add to Cart with confirmation to navigate to cart
+  
   const handleAddToCart = () => {
     const isProductInCart = cart.some(item => item.id === product.id);
     if (isProductInCart) {
       alert('You have already added this product to the cart.');
     } else {
-      setCart((prev) => [...prev, product]);  // Add product to cart
+      setCart((prev) => [...prev, product]);  
 
       const userWantsToGoToCart = window.confirm("Product added to cart. Do you want to view your cart?");
       if (userWantsToGoToCart) {
-        navigate('/cart');  // Navigate to the cart page
+        navigate('/cart');
       }
     }
   };
 
-  // Handle Buy Now, which navigates to checkout with the product
+  
   const handleBuyNow = () => {
     navigate('/checkout', { state: { product, quantity: 1 } });
   };
 
-  // Loading state while fetching product
+  
   if (!product) {
     return <div className="loading">Loading...</div>;
   }

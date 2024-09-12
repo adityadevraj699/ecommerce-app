@@ -44,7 +44,7 @@ const Home = () => {
     { name: 'Fashion', image: '/public/images/fashion.jpg' },
     { name: 'Home', image: '/public/images/home.jpg' },
     { name: 'Sports', image: '/public/images/sports.jpg' }
-    // Add more categories if needed
+    
   ];
 
   return (

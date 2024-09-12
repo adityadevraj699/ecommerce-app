@@ -1,87 +1,85 @@
-/* SearchBar.css */
 
-/* Container */
 .search-bar-page {
     padding: 20px;
-    background-color: #f0f0f0; /* Light grey background */
-    border-radius: 12px; /* Rounded corners for a refined look */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Deep shadow for depth */
-    width: 100%; /* Full-width container */
-    max-width: 1200px; /* Limit maximum width for large screens */
-    margin: 0 auto; /* Center horizontally */
+    background-color: #f0f0f0; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
   }
   
-  /* Search Form */
+  
   .search-form {
     display: flex;
-    border-radius: 12px; /* Rounded corners for input and button */
-    overflow: hidden; /* Ensure content does not overflow */
+    border-radius: 12px; 
+    overflow: hidden; 
   }
   
   .search-input {
     flex: 1;
     border: 1px solid #ddd;
-    border-radius: 12px 0 0 12px; /* Rounded corners for the left side of the input */
+    border-radius: 12px 0 0 12px; 
     padding: 14px 20px;
     font-size: 18px;
-    color: #333; /* Dark text color for readability */
-    background-color: #fff; /* White background for input */
-    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for focus effect */
+    color: #333; 
+    background-color: #fff; 
+    transition: border-color 0.3s, box-shadow 0.3s; 
   }
   
   .search-input:focus {
-    border-color: #d9534f; /* Red border on focus */
-    outline: none; /* Remove default outline */
-    box-shadow: 0 0 8px rgba(217, 83, 79, 0.3); /* Red shadow on focus */
+    border-color: #d9534f;
+    outline: none; 
+    box-shadow: 0 0 8px rgba(217, 83, 79, 0.3);
   }
   
   .search-button {
-    background-color: #d9534f; /* Red background */
+    background-color: #d9534f;
     color: #fff;
-    border: 1px solid #d9534f; /* Match the border with button color */
-    border-radius: 0 12px 12px 0; /* Rounded corners for the right side of the button */
+    border: 1px solid #d9534f;
+    border-radius: 0 12px 12px 0; 
     padding: 14px 24px;
     font-size: 18px;
-    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition for hover effect */
+    transition: background-color 0.3s, border-color 0.3s; 
   }
   
   .search-button:hover {
-    background-color: #c9302c; /* Darker red shade for hover effect */
-    border-color: #c9302c; /* Match border color on hover */
+    background-color: #c9302c;
+    border-color: #c9302c;
   }
   
   /* Categories List */
   .categories-list {
-    margin-top: 30px; /* Increased top margin for spacing */
+    margin-top: 30px; 
   }
   
   .categories-list h4 {
     margin-bottom: 15px;
-    font-size: 22px; /* Larger heading for prominence */
+    font-size: 22px; 
     font-weight: bold;
-    color: #001f3f; /* Navy blue color for heading */
+    color: #001f3f; 
   }
   
   .categories-list .list-group {
-    border-radius: 12px; /* Rounded corners for the category list */
-    background-color: #fff; /* White background for list */
-    border: 1px solid #ddd; /* Light border for separation */
+    border-radius: 12px; 
+    background-color: #fff; 
+    border: 1px solid #ddd; 
   }
   
   .categories-list .list-group-item {
-    background-color: #fff; /* White background for list items */
-    border: none; /* Remove borders */
-    border-radius: 12px; /* Rounded corners for each item */
+    background-color: #fff; 
+    border: none;
+    border-radius: 12px; 
     padding: 14px 20px;
     font-size: 18px;
-    color: #333; /* Dark text color for readability */
+    color: #333; 
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+    transition: background-color 0.3s, color 0.3s; 
   }
   
   .categories-list .list-group-item:hover {
-    background-color: #e0e0e0; /* Light grey background on hover */
-    color: #d9534f; /* Red color on hover for emphasis */
+    background-color: #e0e0e0;
+    color: #d9534f; 
   }
   
   /* Category Item */

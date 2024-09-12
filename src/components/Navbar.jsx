@@ -3,26 +3,26 @@ import React, { useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { FaShoppingCart, FaUser, FaBars, FaTimes, FaHeart, FaSearch } from 'react-icons/fa';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../styles/Navbar.css';  // Custom styles for the Navbar
+import '../styles/Navbar.css'; 
 
 const Navbar = () => {
-  const [isNavOpen, setIsNavOpen] = useState(false); // State to handle the nav menu visibility
+  const [isNavOpen, setIsNavOpen] = useState(false); 
   const navigate = useNavigate();
 
   const toggleNav = () => {
-    setIsNavOpen(!isNavOpen); // Toggle the nav menu visibility
+    setIsNavOpen(!isNavOpen); 
   };
 
   const handleNavLinkClick = () => {
     if (isNavOpen) {
-      setIsNavOpen(false); // Hide navbar on link click
+      setIsNavOpen(false);
     }
   };
 
   const handleSearchClick = () => {
-    navigate('/search'); // Redirect to the search page
+    navigate('/search'); 
     if (isNavOpen) {
-      setIsNavOpen(false); // Hide navbar on search click
+      setIsNavOpen(false); 
     }
   };
 

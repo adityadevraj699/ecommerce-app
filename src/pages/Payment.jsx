@@ -8,11 +8,11 @@ const Payment = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
-  // Extract data from location state
+ 
   const { paymentMethod, name, address, cart, totalPrice } = location.state || {};
 
   if (!totalPrice || isNaN(totalPrice)) {
-    // Handle the case where totalPrice is not a valid number
+    
     return (
       <Container className="payment-container">
         <h1 className="mt-5">Payment</h1>

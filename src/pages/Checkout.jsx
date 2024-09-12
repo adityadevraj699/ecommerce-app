@@ -19,7 +19,7 @@ const Checkout = () => {
   });
   const [quantity, setQuantity] = useState(isSingleProduct ? 1 : 0);
 
-  // Calculate total price and quantity
+  
   const totalPrice = isSingleProduct
     ? singleProduct.price * quantity
     : productsInCart.reduce((total, product) => total + (product.price * product.quantity), 0);

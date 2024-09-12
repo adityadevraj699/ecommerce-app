@@ -114,10 +114,10 @@
     align-items: center;
     background-color: #354e54;
     position: absolute;
-    top: 80px; /* Adjust based on the height of the navbar */
+    top: 80px; 
     left: 0;
     width: 100%;
-    height: auto; /* Ensure height fits content */
+    height: auto; 
     z-index: 1000;
     padding: 2rem;
     gap: 2rem;
@@ -127,9 +127,9 @@
 
   .navbar-nav {
     flex-direction: column;
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    width: 100%; /* Ensure full width */
+    margin: 0; 
+    padding: 0;
+    width: 100%; 
   }
 
   .nav-item {

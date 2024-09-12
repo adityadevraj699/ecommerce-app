@@ -3,7 +3,7 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../styles/Offer.css'; // Import your custom styles
+import '../styles/Offer.css';
 
 const offerItems = [
   {
@@ -38,7 +38,7 @@ const offerItems = [
     category: 'Sports',
     link: '/products?category=Sports',
   },
-  // Add more offers as needed
+  
 ];
 
 const Offers = () => {

@@ -85,7 +85,16 @@ const ProductList = () => {
                 <div className="product-info">
                   <h5 className="product-title">{product.name}</h5>
                   <p className="product-price">${product.price.toFixed(2)}</p>
-      
+                  <Button
+                    variant="dark"
+                    className="view-details-btn"
+                    onClick={() => navigate(`/product/${product.id}`)}
+                  >
+                    View Details
+                  </Button>
+                  
+
+          
                 </div>
               </div>
             </Col>

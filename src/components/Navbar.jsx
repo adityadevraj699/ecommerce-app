@@ -41,10 +41,10 @@ const Navbar = () => {
         <div className={`collapse navbar-collapse ${isNavOpen ? 'show' : ''}`}>
           <ul className="navbar-nav mx-auto">
             <li className="nav-item">
-              <NavLink to="/" className="nav-link" onClick={handleNavLinkClick}>Pussy</NavLink>
+              <NavLink to="/" className="nav-link" onClick={handleNavLinkClick}>homess</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/products" className="nav-link" onClick={handleNavLinkClick}>Billi Mar</NavLink>
+              <NavLink to="/products" className="nav-link" onClick={handleNavLinkClick}>Productsss</NavLink>
             </li>
             <li className="nav-item">
               <NavLink to="/trending" className="nav-link" onClick={handleNavLinkClick}>Trending</NavLink>

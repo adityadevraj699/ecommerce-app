@@ -61,7 +61,7 @@ const Home = () => {
         <Carousel.Item>
           <img className="d-block w-100" src="/images/banner2.jpg" alt="Second slide" />
           <Carousel.Caption>
-            <h3>Top Brand</h3>
+            <h3>Down Brand</h3>
             <Button as={Link} to="/products" variant="light">Shop Now</Button>
           </Carousel.Caption>
         </Carousel.Item>
